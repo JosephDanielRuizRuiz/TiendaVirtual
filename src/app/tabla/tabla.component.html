@@ -1,1 +1,56 @@
-<p>tabla works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimmum-scale=1.0, maximum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <nav class="menu">
+                <div class="logo">
+                    <img src="/src/img/logo.png" alt="">
+                </div>
+                <ul>
+                    <li class="item"><a href="#">Inicio</a></li>
+                    <li class="item"><a href="#">Sobre nosotros</a></li>
+                    <li class="item"><a href="#">Productos</a></li>
+                    <li class="item"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="Titulo">
+                <h1>FREEDOM</h1>
+            </div>
+        </header>
+
+        <div class="tabla">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let Tipificacion of datos">
+                        <td>{{Tipificacion.Codigo}}</td>
+                        <td>{{Tipificacion.Nombre}}</td>
+                        <td>{{Tipificacion.Descripcion}}</td>
+                        <td>{{Tipificacion.Tipo}}</td>
+                        <td>{{Tipificacion.Precio}}</td>
+                        <td>{{Tipificacion.Imagen}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
