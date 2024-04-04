@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Tipificacion } from '../models/tipificacion';
-import { tipificacionService } from '../service/tipificacion.Service';
+import { TipificacionService } from '../service/tipificacion.service';
 
 @Component({
   selector: 'app-tabla',
@@ -11,7 +11,7 @@ export class TablaComponent implements OnInit {
   tipificacion: Tipificacion = {};
   //Para Recibir
   datos: any = [];
-  constructor(private tipificacionService: tipificacionService) {
+  constructor(private tipificacionService: TipificacionService) {
 
   }
 

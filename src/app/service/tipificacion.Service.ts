@@ -1,20 +1,16 @@
-import { Injectable } from "@angular/core";
-import {HttpClient} from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { HttpClient} from '@angular/common/http'
 
 @Injectable({
-    providedIn: 'root'
+  providedIn: 'root'
 })
-export class tipificacionService {
+export class TipificacionService {
 
-    API_URI1 = '';
+  API_URI1 ='';
 
-  envio: any;
+  constructor(private http1: HttpClient) { }
 
-    constructor(private http: HttpClient){
-
-        envio() {
-            return this.http.get(`${this.API_URI1}`);
-        }
-
-    }
+  envio(){
+    return this.http1.get(`${this.API_URI1}`);
+  }
 }
