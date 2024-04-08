@@ -39,6 +39,13 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr *ngFor="let Tipificacion of datos">
+                        <td>{{Tipificacion.Nombre}}</td>
+                        <td>{{Tipificacion.Descripcion}}</td>
+                        <td>{{Tipificacion.Tipo}}</td>
+                        <td>{{Tipificacion.Precio}}</td>
+                        <td>{{Tipificacion.Imagen}}</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
