@@ -63,3 +63,27 @@ body{
     color: #000000;
     font-size: 40px;
 }
+
+.tabla{
+    margin-top: 60px;
+    margin-left: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla table{
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.tabla table thead tr th{
+    background-color: brown;
+    padding: 12px;
+}
+
+tbody tr .campos{
+    text-align: center;
+    padding: 5px;
+}

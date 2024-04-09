@@ -1,8 +1,8 @@
 export interface Tipificacion{
-    Codigo?: any;
+    id?: any;
     Nombre?: string;
     Descripcion?: string;
-    Tipo?: number;
+    Tipo?: string;
     Precio?: string;
     Imagen?: string;
 }
