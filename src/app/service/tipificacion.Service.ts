@@ -8,9 +8,9 @@ export class TipificacionService {
 
   API_URI1 ='http://localhost/BACK/recepcion.php';
 
-  constructor(private http1: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   envio(){
-    return this.http1.get(`${this.API_URI1}`);
+    return this.http.get(`${this.API_URI1}`);
   }
 }

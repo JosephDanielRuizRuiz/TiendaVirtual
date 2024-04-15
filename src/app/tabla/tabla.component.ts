@@ -16,10 +16,6 @@ export class TablaComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
-    this.getDatos();
-  }
-  
   getDatos(){
     this.tipificacionService.envio().subscribe(
       res => {
@@ -27,6 +23,11 @@ export class TablaComponent implements OnInit {
       },
       err => console.log(err)
     );
+  }
+
+
+  ngOnInit(): void {
+    this.getDatos();
   }
 
 }
