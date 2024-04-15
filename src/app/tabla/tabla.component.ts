@@ -9,17 +9,17 @@ import { TipificacionService } from '../service/tipificacion.Service';
 })
 export class TablaComponent implements OnInit {
   
-  tipificacion: Tipificacion = {};/*
+  tipificacion: Tipificacion = {};
   //Para Recibir
   datos: any = [];
   constructor(private tipificacionService: TipificacionService) {
 
-  }*/
+  }
 
   ngOnInit(): void {
-    //this.getDatos();
+    this.getDatos();
   }
-  /*
+  
   getDatos(){
     this.tipificacionService.envio().subscribe(
       res => {
@@ -27,6 +27,6 @@ export class TablaComponent implements OnInit {
       },
       err => console.log(err)
     );
-  }*/
+  }
 
 }
