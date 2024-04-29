@@ -12,9 +12,12 @@ export class TablaComponent implements OnInit {
   tipificacion: Tipificacion = {};
   //Para Recibir
   datos: any = [];
-  constructor(private tipificacionService: TipificacionService) {
+  constructor(private tipificacionService: TipificacionService) {}
 
+  ngOnInit(): void {
+    this.getDatos();
   }
+
 
   getDatos(){
     this.tipificacionService.envio().subscribe(
@@ -23,11 +26,6 @@ export class TablaComponent implements OnInit {
       },
       err => console.log(err)
     );
-  }
-
-
-  ngOnInit(): void {
-    this.getDatos();
   }
 
 }

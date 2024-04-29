@@ -6,7 +6,7 @@ import { HttpClient} from '@angular/common/http'
 })
 export class TipificacionService {
 
-  API_URI1 ='http://localhost/BACK/recepcion.php';
+  API_URI1 ='http://localhost:81/BACK/recepcion.php';
 
   constructor(private http: HttpClient) { }
 
