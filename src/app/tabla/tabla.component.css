@@ -136,7 +136,7 @@ header nav a.active{
 
 .tabla table{
     border: 2px solid black;
-    padding: 5px;
+    padding: 10px;
     font-size: 30px;
 }
 
@@ -145,9 +145,14 @@ header nav a.active{
     padding: 12px;
 }
 
+.tabla table thead tr td{
+    padding: 12px;    
+    margin: 10px;
+}
+
 tbody tr .campos{
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 footer{
